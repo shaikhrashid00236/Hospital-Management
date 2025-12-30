@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reviews</title>
+       <style>
+        :root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow: .5rem .5rem 0 rgba(22,160,133,.2);
+    --text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);
+    --border: .2rem solid var(--green);
+}
+
+*{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    
+    overflow-x:hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow:var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size:3rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+    font-size: 3.5rem;
+
+}
+.review .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 1rem;
+}
+
+.review .box-container .box{
+    text-align: center;
+    background: #fff;
+    padding:2rem;
+}
+
+.review .box-container .box h3{
+    color:#fff;
+    font-size:3rem;
+    padding:.5rem 0;
+}
+
+.review .box-container .box .stars i{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.review .box-container .box .text{
+    color: black;
+    line-height: 1.8;
+    font-size: 2.5rem;
+    padding-top: 4rem;
+}
+
+
+    </style>
+    </head>
+<body>
+
+<section class="review" id="review">
+        <h1 class="heading"><span>Our Reviews</span></h1>
+        <div clas="box-container">
+            <div class="box">
+                <div class="image">
+                <img src="review1.avif" height="200px" width="200px">
+            </div>
+                <h3> Prashant </h3>
+                <p class="text"><h3>Exceptional Care from the Nephrology Department.</h3><br><br> I cannot speak highly enough of the Nephrology Department
+                     at Bright HealthCare. From the moment I walked in, the entire team—from the front desk staff to the specialist doctors—was attentive, 
+                     compassionate, and extremely knowledgeable. Dr. Pankaj and the nephrology team took the time to explain every aspect of my condition
+                     and treatment plan in a way that was easy to understand. Their patient-centered approach made me feel involved and supported every step of the way.</p>
+            </div><br>
+
+        <div class="box">
+            <div class="image">
+                <img src="review2.jpg" height="200px" width="200px">
+            </div>
+            <h3> Suhail </h3>
+            <p class="text"><h3>I am deeply grateful for the exceptional care</h3><br><br> I received very well care from the Cardiologist Department. 
+                            From my initial consultation through treatment and follow-up, every member of the team demonstrated professionalism,
+                            compassion, and a commitment to excellence. Dr. V.K Goyal was not only highly skilled but also took the time 
+                            to listen, explain, and reassure me during a very stressful time. Their expertise in diagnosing and managing my heart
+                            condition gave me complete confidence that I was in the best hands possible.</p>
+        </div><br>
+
+        <div class="box">
+            <div class="image">
+                <img src="review3.jpg" height="200px" width="200px">
+            </div>
+            <h3> Pramod </h3>
+            <p class="text"><h3>The Dentistry Department exceeded all expectations.</h3><br><br> Dr. Rida  was incredibly gentle,
+                 thorough, and made sure I felt comfortable during every step of my treatment. Whether it was a routine cleaning, cavity
+                  filling, or more complex work, the quality of care was exceptional. The department was clean, modern, and equipped with the 
+                  latest technology. I truly appreciate how they prioritize patient education and preventative care. Highly recommended for
+                   anyone looking for expert dental care with a human touch</p>
+                </div><br>
+
+        <div class="box">
+            <div class="image">
+                <img src="review4.jpg" height="200px" width="200px">
+            </div>
+            <h3> Amit </h3>
+            <p class="text"><h3>Urology Department – Professional, Respectful, and Highly Skilled</h3><br><br>
+                    The Urology team provided outstanding care during a very personal and sensitive health 
+                    issue. Dr. Riyaz took the time to explain my condition clearly and compassionately, and the 
+                    entire process—from diagnosis to treatment—was handled with professionalism and discretion. The staff made me feel 
+                    comfortable and supported throughout. Their expertise and empathy made a difficult experience much easier to navigate. Truly top-tier urological care.</p>
+        </div><br>
+
+        <div class="box">
+            <div class="image">
+                <img src="review5.jpg" height="200px" width="200px">
+            </div>
+            <h3> </h3>
+            <p class="text"> <h3>Pathology Department – Accurate, Timely, and Trusted Diagnostics</h3><br><br>
+                       The Pathology Department plays a vital role behind the scenes, and their 
+                       efficiency and accuracy are truly commendable. Every test result I received was delivered promptly
+                        and explained clearly by my doctor, thanks to the detailed reporting by the pathology team. Their work
+                         provided the foundation for timely and effective treatment decisions. The lab facilities are
+                        the professionalism of the staff is evident. A dependable and essential part of the hospital’s outstanding care network.</p>
+        </div><br>
+
+        <div class="box">
+            <div class="image">
+                <img src="review6.jpg" height="200px" width="200px">
+            </div>
+            <h3> Rafi</h3>
+            <p class="text"><h3>Excellent Care at Bright HealthCare's Pediatrics Department</h3><br><br>
+            recently i visit Bright HealthCare's Pediatrics Department. As a parent, nothing is more important than your child’s
+             health—and trusting someone else with that responsibility is never easy. But from the moment we walked into the
+              Pediatrics Department, we felt an overwhelming sense of comfort, care, and genuine compassion.
+            Dr. Dinesh and the entire team treated my child not just as a patient, but as a person—with kindness, 
+            patience, and warmth. Every nurse, technician, and staff member was gentle and reassuring, turning what could have
+             been a frightening experience into one filled with calm, care, and even smiles.
+        </div><br>
+    </section>
+    </body>
+    </html>

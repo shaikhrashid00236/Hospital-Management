@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interns </title>
+        <style>
+        :root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow: .5rem .5rem 0 rgba(22,160,133,.2);
+    --text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);
+    --border: .2rem solid black;
+}
+
+*{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow:var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size:5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+
+}
+
+.btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:.5rem;
+    padding-left:1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow:var(--box-shadow);
+    color:var(--green);
+    cursor:pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btn span{
+    padding:.7rem 1rem;
+    border-radius:.5rem;
+    background: var(--green);
+    color:#fff;
+    margin-left:.5rem;
+}
+
+.interns .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5rem;
+}
+
+.interns .box-container .box{
+    text-align: center;
+    background: #fff;
+    border-radius: 3rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+}
+
+.interns .box-container .box img{
+    height:20rem;
+    border:var(--border);
+    border-radius: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.interns .box-container .box h3{
+    color:var(--black);
+    font-size:2.5rem;
+}
+
+.interns .box-container .box span{
+    color:var(--green);
+    font-size:2.5rem;
+}
+
+.interns .box-container .box share{
+    padding-top:2rem;
+}
+
+.interns .box-container .box share a{
+    height:5rem;
+    width:5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color:var(--green);
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.3rem;
+}
+
+.interns .box-container .box share a:hover{
+    background:var(--green);
+    color:#fff;
+    box-shadow:var(--box-shadow);
+}
+    </style>
+    </head>
+    
+    <body>
+        <section class="interns" id="interns">
+            <h1 class="heading">Our <span>Interns</span></h1>
+            <h1>Every year we select 10 final year students from different Govt medical colleges as an interns on
+                 the basis of interview for assist to our doctors and fullfillment of their Degree</h1><br>
+            <div class="box-container">
+                <div class="box">
+                    <img src="intern1.jpg" alt="" height="200px" width="250px">
+                    <h3>Dr. Manish</h3>
+                    <h3>[MBBS]</h3>
+                    <span>General Physician</span>
+                    <h3>Duration : 6 Months</h3>
+                    
+                    <h3>Room : 12</h3>
+                    
+                </div>
+                     
+        <div class="box">
+            <img src="intern2.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Anuj</h3>
+            <h3>[MS]</h3>
+            <span>General Surgeon</span>
+            <h3>Duration : 6 Months</h3>
+             <h3>Room : 13</h3>
+            
+            
+        </div>
+    
+        <div class="box">
+            <img src="intern3.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Vineet</h3>
+            <h3>[MD]</h3>
+            <span>Pathology</span>
+            <h3>Duration : 3 Months</h3>
+             <h3>Room : 14</h3>
+            
+           
+        </div>
+    
+        <div class="box">
+            <img src="intern4.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Zuhaib</h3>
+            <h3>[MBBS]</h3>
+             <span>Radiology</span>
+            <h3>Duration : 6 Months</h3>
+             <h3>Room : 15</h3>
+           
+           
+        </div>
+    
+        <div class="box">
+            <img src="intern5.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Prashant</h3>
+            <h3>[MD]</h3>
+            <span>Neurologist</span>
+            <h3>Duration : 12 Months</h3>
+             <h3>Room : 16</h3>
+            
+           
+        </div>
+    
+        <div class="box">
+            <img src="intern6.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Vanshika</h3>
+            <h3>[DCH]</h3>
+            <span>Pediatrics</span>
+            <h3>Duration : 12 Months</h3>
+             <h3>Room : 17</h3>
+            
+            
+        </div>
+    
+        <div class="box">
+            <img src="intern7.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Sakshi</h3>
+            <h3>[DM]</h3>
+            <span>Cardiologist</span>
+            <h3>Duration : 6 Months</h3>
+             <h3>Room : 18</h3>
+            
+            
+        </div>
+    
+    
+        <div class="box">
+            <img src="intern8.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Zunaid</h3>
+            <h3>[MS]</h3>
+              <span>Urologist</span>
+            <h3>Duration : 15 Months</h3>
+             <h3>Room : 19</h3>
+          
+
+        </div>
+    
+        <div class="box">
+            <img src="intern9.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Lokesh</h3>
+            <h3>[BPT]</h3>
+            <span>Physiotherapist</span>
+            <h3>Duration : 15 Months</h3>
+             <h3>Room : 20</h3>
+            
+            
+        </div>
+    
+        <div class="box">
+            <img src="intern10.jpg" alt="" height="200px" width="250px">
+            <h3>Dr. Faisal</h3>
+            <h3>[MS]</h3>
+            <span>Spine Surgeon</span>
+            <h3>Duration : 15 Months</h3>
+             <h3>Room : 21</h3>
+            
+            
+        </div>
+    </div>
+</section>  
+</body>
+</html>

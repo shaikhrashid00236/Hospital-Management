@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+body{
+    background: url('regis.avif') no-repeat;
+    background-size: cover;
+    color:#fff;
+}
+
+.registration-form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+}
+
+.registration-form h1{
+    font-size:20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin:40px;
+}
+
+.registration-form input{
+    font-size:15px;
+    margin:10px 0;
+    padding:15px 10px;
+    border:0;
+    border-radius: 5px;
+    outline:none;
+}
+
+.registration-form button{
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+    padding:5px 5px;
+    width:40%;
+    border:0;
+    border-radius: 20px;
+    background: aqua;
+}
+
+.registration-form button:hover{
+    color:yellow;
+}
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h1>Registration </h1>
+        <form action="registration.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required><br>
+            <input type="text" name="fname" placeholder="Father Name" required><br>
+            <input type="text" name="city" placeholder="City" required><br>
+            <input type="text" name="state" placeholder="State" required><br>
+            <input type="number" name="age" placeholder="Age" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="number" name="phone" placeholder="Phone No" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

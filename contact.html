@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Information </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contact{
+    min-height: 100vh;
+    background-color: #e8f0e8;
+    padding:50px;
+    text-align: center;
+}
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
+}
+
+.contact-info h3{
+    font-size:25px;
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    color:#555;
+}
+
+.contact-info i{
+    color:#4caf50;
+    margin-right: 10px;
+}
+
+.map{
+    background: white;
+    border-radius: 3rem;
+    border:var(#555);
+    text-align: center;
+    
+}
+
+.img{
+    align-items: center;
+    border-radius: 5rem;
+    border-style:dashed;
+}
+.img:hover{
+    color:#1700e1;
+    background: rgb(255, 0, 0);
+}
+
+
+@media screen and(max-width:768px){
+    .container{
+        padding:20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2><br>
+                <div class="contact-info">
+                    
+                    <p><i class="fas fa-phone"></i>  +91-7055846202 </a></p>
+                    <p><i class="fas fa-phone"></i>  +91-945734895</a></p>
+                    <p><i class="fas fa-envelope"></i> rafisaifi9058@gmail.com/samisaifi6162@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i>Kutte ki kabr, Sikandrabad (BSR)</p>
+                    <a href="https://wa.me/7055846202">
+                        <img src="wh.jpg" class="img" height="50px" width="50px">
+                    </a>
+                         
+                    <a href="https://www.instagram.com/samisaifi122/">
+                        <img src="ins.jpg" class="img" height="50px" width="50px">
+                    </a>
+                       
+                    <a href="https://www.facebook.com/profile.php?id1579735236651">
+                        <img src="fb.jpg" class="img" height="50px" width="50px">
+                    </a>
+                        
+                    <a href="https://www.linkedin.com/in/sami-saifi-02320037b/">
+                        <img src="ld.jpg" class="img" height="50px" width="50px">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

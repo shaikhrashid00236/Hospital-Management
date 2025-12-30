@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Medicines </title>
+</head>
+<body>
+  <style>
+    *{
+     padding: .5rem;
+     font-family: sans-serif;
+     font-size: 1rem;
+     color:black;
+     margin: .5rem;
+     align-content:center;
+     background: url(med.jpeg);
+    }
+    h1{
+      font-size: 2rem;
+      color:blue;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+
+  <marquee ><h1>Available Tablets, Capsules, Syrups, Powders and injections in Bright HealthCare</h1></marquee>
+  <h1>Search for any Medicine...</h1>
+  <input type="text" id="search" placeholder="Type medicine name">
+  <ul id="result"></ul>
+
+  <script>
+    const medicines = ["Paracetamol tab", "Amoxicillin tab","Ibuprofen tab", "Metrogyl 400 tab","Norflox 400 tab","Advil tab", "Motrin tab", "Naproxen tab", "oxycodone tab", "hydrocodone tab","cyclobenzaprine tab","warfarin tab", "acetaminophen tab", 
+                       "ibuprofen tab", "opioids tab", "ondansetron tab", "Azithromycin tab","Ciprofloxacin tab","Cephalexin tab", "Oseltamivir tab","Valacyclovir tab", "Fluconazole tab" ,"Itraconazole tab","Carbamazepine tab", "Lamotrigine tab", 
+                       "Levetiracetam tab","Amoxicillin tab", "Doxycycline tab","Cyclobenzaprine tab","Cephalexin tab","Insulin tab","Sumatriptan tab","Topiramate tab","Levodopa tab", "Gabapentin tab","Lisinopril tab","Vitamin D tab","Naproxen tab",
+                       "Pregabalin tab", "Angiotensin tab","rivaroxaban tab","Angiotensin tab", "nitroglycerin tab", "amiodarone tab","prednisone tab", "Diclofenac tab","Lisinopril tab","Azithromycin tab","Tramadol tab","Amoxicillin tab","Potassium tab",
+                       "Clavulanate tab","Clonazepam tab","flucloxacillin cap","co-amoxiclav tab","Amoxicillin tab", "Cetirizine tab",
+                       "Aspirin tab","Multivitamins cap","Amoxicillin cap","Itraconazole cap","Didanosine cap","Flupirtine cap","B-COLEX cap","Revital H cap","MuscleBlaze Omega-3 cap","ABITUSS-A cap","ABITUSS-DX cap","Pantoprazole cap","Becosules cap","Mekonerv fort cap","Lsr cap","Azithromycin cap","Penicillin V cap",
+                       "Apollo Life Cough Syp","Cofsils Naturals Cough Syp","Himalaya Gasex syp","RYDUCE SYP","Cofsils Cough Syp","Dexorange syp", "Feroglobin B12 syp","Keva Iron syp","Aptee Syp", "Practin Syp", "Normatone Syp","Hamdard Safi syp","Giocyp Syp",
+                       "Multani Cough Syp","Posaconazole Picasa syp","Pankajakasthuri Tulsi Syrup","Himalaya Koflet Syp","ABITUSS-LS syp","VIStevia Sugar-free Syp","Elderberry syp","Echinacea syp","Vitamin C syp","Zinc syp","Probiotic syp", "Antacid syp", "Acetaminophen syp","Ibuprofen syp",
+                       "Magnesium Hydroxide Syp","Calcium Vitamin Syp","Hamdard Joshina Syp",
+                       "cefotaxime inj","ceftriaxone inj", "adrenaline inj","anaphylaxis inj","insulin inj","Amikacin inj","Heparin inj","Emicizumab inj","Vitamin K Inj","Acetaminophen inj","triamcinolone inj", "Dextromethorphan inj", "Flu inj",  "Hepatitis B inj", 
+                       "COVID-19 inj",  "lidocaine inj", "triamcinolone inj", "Antibiotic inj",  "Vitamin inj", "triazolam inj",                        
+                       "Emergen-C pow","Turmeric pow","Garlic pow", "Chocolate pow","Vitamin C pow", "Elderberry pow",  "Chaga mushroom pow", "Ancient Nutrition pow", "ORS pow",  "Electral pow","Pedialyte pow", "Calcium Carbonate pow", "Nature's Bounty pow",
+                       "Neosporin cream","Bacitracin cream","Mupirocin cream","Fucidin cream","Clotrimazole cream","Polysporin cream","Cetrimide cream","betadin cream","betnovate n cream","betnovate c cream","Betnovate s cream","Betnovate gm cream","Dexoderm NF cream", "Dexoderm L cream", "Quadriderm cream", "Mycoderm-NM cream","Propygenta NF cream",
+                       "Silver Nitrate gel", "Pain Relief gel","Mouth Antiseptic gel","Metronidazole gel","Glycerin gel","Antimicrobial Hydro gel","Miconazole gel","Ketoconazole gel","Soframycin Violet gel","corticosteroids gel","Daktarin gel","Ointment Bactroban gel","clindamycin gel","isopropyl alcohol spray","hydrogen peroxide spray","Savlon Sanitizer Spray","Antimicrobial Skin Spray","Hansaplast Wound Spray"];
+
+    const searchBox = document.getElementById("search");
+    const resultList = document.getElementById("result");
+
+    searchBox.addEventListener("input", function() {
+      const query = this.value.toLowerCase();
+      resultList.innerHTML = "";
+
+      let found = false;
+
+      medicines.forEach(function(med) {
+        if (med.toLowerCase().includes(query)) {
+          const li = document.createElement("li");
+          li.textContent = med;
+          resultList.appendChild(li);
+          found = true;
+        }
+      });
+
+      if (!found) {
+        const li = document.createElement("li");
+        li.textContent = "No medicines found";
+        resultList.appendChild(li);
+      }
+    });
+  </script>
+</body>
+</html>
